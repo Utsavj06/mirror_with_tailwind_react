@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import NameEntry from './components/NameEntry';
+import Button from './components/Button';
+import Display from './components/Display';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="lg:flex w-full h-screen">
+        <NameEntry styles=" bg-red-400 flex justify-center content-center w-2/6 lg:w-5/12" EnteredName="Your Name"/>
+        <Button styles={"lg:h-screen w-12 lg:w-4/5 flex justify-center text-3xl border-8"} name={"Mirror Me"}/>
+        <Display styles="bg-red-400 flex justify-center content-center w-2/6 lg:w-5/12 text-2xl border-8" displayName="Mirror Name" />
     </div>
   );
 }

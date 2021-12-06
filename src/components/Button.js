@@ -1,7 +1,7 @@
 function Button(props){
     return(
-        <div>
-            <button className={props.styles}>{props.name}</button>
+        <div className={props.styles}>
+            <button>{props.name}</button>
         </div>
     )
 }

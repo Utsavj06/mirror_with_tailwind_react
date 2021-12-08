@@ -1,7 +1,7 @@
 function Button(props){
     return(
         <div className={props.styles}>
-            <button>{props.name}</button>
+            <button className={props.myBorder} onClick={props.myClick} >{props.name}</button>
         </div>
     )
 }
